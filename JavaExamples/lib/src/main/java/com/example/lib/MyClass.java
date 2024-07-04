@@ -5,9 +5,11 @@ public class MyClass {
     public static void main(String[] args){
 
         //className object = new className();
-        Car redCar = new Car();
-        redCar.speed = 150;
-        redCar.year = 2020;
+        Car redCar = new Car(100,2020);
+//        redCar.speed = 150;
+//        redCar.year = 2020;
+        //using constructor
+
         redCar.accelerate();
         redCar.brake();
         String speedTxt = redCar.showSpeed();
@@ -16,9 +18,14 @@ public class MyClass {
     }
 }
 class Car{
+
     int year;
     int speed;
 
+    public Car(int carSpeed,int carYear){
+        year = carYear;
+        speed = carSpeed;
+    }
     void accelerate(){
         speed += 10;
     }
