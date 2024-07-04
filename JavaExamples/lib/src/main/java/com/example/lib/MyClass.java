@@ -26,6 +26,14 @@ class Car{
         year = carYear;
         speed = carSpeed;
     }
+
+    public int getYear(){
+        return year;
+    }
+    public void setYear(int new_year){
+        this.year = new_year;
+    }
+
     void accelerate(){
         speed += 10;
     }
@@ -37,3 +45,9 @@ class Car{
     }
 
 }
+// NOTES ⬇️>
+
+
+/*! Encapsulation *\
+    -- putting all together but protected from others
+ */
